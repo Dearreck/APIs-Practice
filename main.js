@@ -29,6 +29,7 @@ function ShowUser() {
         contenedor.style.color = "black";
       }
 
+      // Datos Personales
       datos.innerHTML = `
         <label>Datos Personales</label>
         <label>Nombre Completo: ${person.name.title} ${person.name.first} ${person.name.last}</label>
