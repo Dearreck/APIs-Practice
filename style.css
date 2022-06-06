@@ -52,6 +52,9 @@ picture#logo>img {
 
 #user-nat{
     padding: 15px;
+
+    display: flex;
+    flex-flow: column wrap;
 }
 
 picture#flag{

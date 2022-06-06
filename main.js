@@ -32,9 +32,9 @@ function ShowUser() {
         <source media="(min-width: 480px)" srcset="https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/${result.results[0].nat.toLowerCase()}.svg">
         <img src="https://raw.githubusercontent.com/lipis/flag-icons/main/flags/1x1/${result.results[0].nat.toLowerCase()}.svg" alt="">
       </picture>
-      <label>País: ${result.results[0].location.country}</label><br/>
-      <label>Estado: ${result.results[0].location.state}</label><br/>
-      <label>Ciudad: ${result.results[0].location.city}</label><br/>
+      <label>País: ${result.results[0].location.country}</label>
+      <label>Estado: ${result.results[0].location.state}</label>
+      <label>Ciudad: ${result.results[0].location.city}</label>
       <label>Dirección: ${result.results[0].location.street.number} ${result.results[0].location.street.name}</label><br/>
       `;
 
