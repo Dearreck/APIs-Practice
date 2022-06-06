@@ -28,6 +28,13 @@ function ShowUser() {
         contenedor.style.backgroundColor = "pink";
         contenedor.style.color = "black";
       }
+     else {
+        contenedor.style.backgroundColor = "blue";
+        contenedor.style.color = "white";
+      }
+
+
+      debugger
 
       // Datos Personales
       datos.innerHTML = `

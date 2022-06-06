@@ -10,6 +10,27 @@
     box-sizing: border-box;
 }
 
+input[type="button"]{
+    color: #fff;
+    background-color:darkorange;
+
+    border-radius: 5px;
+
+    padding: 20px;
+    margin: 5px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    color: darkorange;
+    background-color:#001950;
+}
+
 #user-container {
     height: auto;
 
