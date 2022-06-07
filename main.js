@@ -28,13 +28,10 @@ function ShowUser() {
         contenedor.style.backgroundColor = "pink";
         contenedor.style.color = "black";
       }
-     else {
+      else {
         contenedor.style.backgroundColor = "blue";
         contenedor.style.color = "white";
       }
-
-
-      debugger
 
       // Datos Personales
       datos.innerHTML = `
@@ -62,7 +59,12 @@ function ShowUser() {
       // Mostrar el mapa: Somoto (13.479576, -86.586356)
       let latit = Number(person.location.coordinates.latitude)
       let longit = Number(person.location.coordinates.longitude)
-      var map = L.map('map').setView([latit, longit], 3);
+      
+      // Corrección del marcador
+      L.DomUtil.get('map')._leaflet_id &&= null
+
+      //console.log(L.DomUtil.get('map')._leaflet_id)
+      let map = L.map('map').setView([latit, longit], 3);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -71,9 +73,6 @@ function ShowUser() {
       L.marker([latit, longit]).addTo(map)
         .bindPopup('Es una ubicación ficticia.<br> Point: ' + latit + ', ' + longit)
         .openPopup();
-
-
-      console.log(person);
 
     })
     .catch(error => console.log('error', error));
