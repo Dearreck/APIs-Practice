@@ -1,0 +1,27 @@
+{
+    "remotePath": "./test1",
+    "host": "ftp.gruposef.com",
+    "username": "sub13@sub13.gruposef.com",
+    "password": "vlasub13",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ".php, .js, .css, .html"
+        ],
+        "path": ""
+    }
+}
